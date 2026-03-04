@@ -1,0 +1,185 @@
+{
+  "data": {
+    "nodeBios": {
+      "__typename": "NodeBioConnection",
+      "nodes": [
+        {
+          "__typename": "NodeBio",
+          "id": "bio-lena",
+          "title": "Lena Voss",
+          "path": "/band/lena-voss",
+          "body": {
+            "processed": "<p>Lena is the vocalist and lyricist of Glass Tides. Born in Stockholm and raised in Bristol, her voice -- a crystalline soprano that can shift from whispered intimacy to soaring power -- has become the band's most recognizable element.</p><p>Before forming Glass Tides, Lena studied literature at the University of Bristol and performed in the city's DIY music scene. Her lyrics draw heavily from poetry, particularly the work of Anne Carson and Ocean Vuong, blending personal narrative with abstract imagery.</p><p>Outside the band, Lena has collaborated with ambient producer Nils Frahm and contributed vocals to the soundtrack of A24 film <em>The Drift</em>.</p>",
+            "summary": "Lena is the vocalist and lyricist of Glass Tides. Born in Stockholm and raised in Bristol, her voice -- a crystalline soprano that can shift from whispered intimacy to soaring power -- has become the "
+          },
+          "memberRole": "Vocals & Lyrics",
+          "joinedYear": "2016",
+          "influences": [
+            "Bjork",
+            "Cocteau Twins",
+            "Radiohead",
+            "Kate Bush"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+            "alt": "Lena Voss - Vocalist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeBio",
+          "id": "bio-tom",
+          "title": "Tom Ashford",
+          "path": "/band/tom-ashford",
+          "body": {
+            "processed": "<p>Tom is the guitarist and primary composer of Glass Tides. His playing style combines shimmering delay-laden textures with precise melodic lines, creating the band's signature wall-of-sound guitar work.</p><p>A classically trained guitarist who fell in love with effects pedals, Tom's pedalboard is legendary among gear enthusiasts -- a sprawling 24-pedal setup that he calls \"the spaceship.\" He builds custom effects pedals in his spare time and runs a small pedal company, Ashford Electronics.</p><p>Tom and Lena co-write most of the band's material, typically starting from Tom's instrumental compositions which Lena then shapes with vocal melodies and lyrics.</p>",
+            "summary": "Tom is the guitarist and primary composer of Glass Tides. His playing style combines shimmering delay-laden textures with precise melodic lines, creating the band's signature wall-of-sound guitar work"
+          },
+          "memberRole": "Guitar & Composition",
+          "joinedYear": "2016",
+          "influences": [
+            "My Bloody Valentine",
+            "Boards of Canada",
+            "Jonny Greenwood",
+            "The Edge"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+            "alt": "Tom Ashford - Guitarist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeBio",
+          "id": "bio-sara",
+          "title": "Sara Kim",
+          "path": "/band/sara-kim",
+          "body": {
+            "processed": "<p>Sara is the band's bassist and synth programmer. Her background in electronic music production gives Glass Tides their rhythmic foundation, bridging the gap between organic instrumentation and electronic textures.</p><p>Before joining Glass Tides in 2017, Sara was producing electronic music under the alias SK_NULL, releasing two EPs on the Hyperdub label. She continues to produce solo material between album cycles.</p><p>Sara is also the band's studio engineer, having designed and built the recording setup they use for demos and pre-production.</p>",
+            "summary": "Sara is the band's bassist and synth programmer. Her background in electronic music production gives Glass Tides their rhythmic foundation, bridging the gap between organic instrumentation and electro"
+          },
+          "memberRole": "Bass & Synthesizers",
+          "joinedYear": "2017",
+          "influences": [
+            "Burial",
+            "Joy Division",
+            "Massive Attack",
+            "Portishead"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Sara Kim - Bassist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeBio",
+          "id": "bio-jake",
+          "title": "Jake Okoye",
+          "path": "/band/jake-okoye",
+          "body": {
+            "processed": "<p>Jake is the drummer and percussionist of Glass Tides. His drumming style -- precise, dynamic, and deeply groovy -- provides the rhythmic backbone that keeps the band's expansive soundscapes grounded and physical.</p><p>Jake grew up playing in his father's jazz ensemble in Birmingham before studying at the Royal Academy of Music. His jazz background is evident in his fluid, conversational playing style, particularly on the band's live recordings where his improvisational instincts shine.</p><p>He is the newest member of Glass Tides, joining in 2018 after the departure of original drummer Callum Webb.</p>",
+            "summary": "Jake is the drummer and percussionist of Glass Tides. His drumming style -- precise, dynamic, and deeply groovy -- provides the rhythmic backbone that keeps the band's expansive soundscapes grounded a"
+          },
+          "memberRole": "Drums & Percussion",
+          "joinedYear": "2018",
+          "influences": [
+            "Brian Blade",
+            "Zach Hill",
+            "Jaki Liebezeit",
+            "Steve Gadd"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "alt": "Jake Okoye - Drummer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

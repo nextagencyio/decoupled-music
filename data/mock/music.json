@@ -1,0 +1,219 @@
+{
+  "data": {
+    "nodeReleases": {
+      "__typename": "NodeReleaseConnection",
+      "nodes": [
+        {
+          "__typename": "NodeRelease",
+          "id": "release-parallax",
+          "title": "Parallax",
+          "path": "/music/parallax",
+          "body": {
+            "processed": "<p><em>Parallax</em> is Glass Tides' fifth studio album and their most ambitious work to date. Recorded over 14 months at Monnow Valley Studio in Wales and Real World Studios in Bath, the album explores themes of perspective, distance, and the spaces between people.</p><h2>About the Album</h2><p>Produced by James Ford (Arctic Monkeys, Depeche Mode), <em>Parallax</em> marks a sonic evolution for the band, incorporating orchestral arrangements, analog synthesizers, and field recordings from their 2024 world tour. The result is a sweeping, cinematic record that critics have called \"their masterpiece.\"</p><h2>Critical Reception</h2><ul><li>Pitchfork: 8.7 - \"A band reaching their creative peak\"</li><li>NME: 5/5 - \"Astonishing in scope and intimacy\"</li><li>The Guardian: 4/5 - \"Dream-pop for the end of the world\"</li></ul>",
+            "summary": "Parallax is Glass Tides' fifth studio album and their most ambitious work to date. Recorded over 14 months at Monnow Valley Studio in Wales and Real World Studios in Bath, the album explores themes of"
+          },
+          "releaseFormat": [
+            {
+              "id": "album",
+              "name": "album"
+            }
+          ],
+          "genre": [
+            {
+              "id": "indie-rock",
+              "name": "indie-rock"
+            },
+            {
+              "id": "electronic",
+              "name": "electronic"
+            },
+            {
+              "id": "dream-pop",
+              "name": "dream-pop"
+            }
+          ],
+          "releaseDate": {
+            "timestamp": 1762581600
+          },
+          "trackCount": 12,
+          "duration": "52:14",
+          "recordLabel": "Transgressive Records",
+          "coverArt": {
+            "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80",
+            "alt": "Parallax album cover - abstract light refraction",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "tracklist": [
+            "Overture",
+            "Hollow Light",
+            "Everything Fades",
+            "Signal / Noise",
+            "The Distance Between",
+            "Parallax",
+            "Tidal Lock",
+            "Ghost Meridian",
+            "Weightless",
+            "Closer Still",
+            "The Return",
+            "Afterglow (Epilogue)"
+          ],
+          "streamingUrl": "https://open.spotify.com/album/example"
+        },
+        {
+          "__typename": "NodeRelease",
+          "id": "release-hollow-light",
+          "title": "Hollow Light",
+          "path": "/music/hollow-light-single",
+          "body": {
+            "processed": "<p>The lead single from <em>Parallax</em>, \"Hollow Light\" is a shimmering, propulsive track built around a cascading synth arpeggio and vocalist Lena Voss's most powerful performance to date.</p><p>The accompanying music video, directed by Jonathan Glazer, was filmed in a single take in an abandoned observatory in the Atacama Desert.</p><h2>Reception</h2><p>\"Hollow Light\" debuted at #4 on the UK Singles Chart and topped the Billboard Alternative Airplay chart for three weeks. The music video has accumulated over 15 million views on YouTube.</p>",
+            "summary": "The lead single from Parallax, \"Hollow Light\" is a shimmering, propulsive track built around a cascading synth arpeggio and vocalist Lena Voss's most powerful performance to date.The accompanying musi"
+          },
+          "releaseFormat": [
+            {
+              "id": "single",
+              "name": "single"
+            }
+          ],
+          "genre": [
+            {
+              "id": "electronic",
+              "name": "electronic"
+            },
+            {
+              "id": "dream-pop",
+              "name": "dream-pop"
+            }
+          ],
+          "releaseDate": {
+            "timestamp": 1757653200
+          },
+          "trackCount": 1,
+          "duration": "4:38",
+          "recordLabel": "Transgressive Records",
+          "coverArt": {
+            "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=800&q=80",
+            "alt": "Hollow Light single artwork - light through prism",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "tracklist": [
+            "Hollow Light"
+          ],
+          "streamingUrl": "https://open.spotify.com/track/example"
+        },
+        {
+          "__typename": "NodeRelease",
+          "id": "release-afterimage",
+          "title": "Afterimage",
+          "path": "/music/afterimage",
+          "body": {
+            "processed": "<p><em>Afterimage</em>, Glass Tides' fourth album, represented a turning point for the band. Moving away from the guitar-driven sound of their earlier work, the album embraced synthesizers, drum machines, and layered vocal harmonies to create something both danceable and deeply melancholic.</p><h2>About the Album</h2><p>Recorded in Berlin during the winter of 2023, the city's electronic music scene had a profound influence on the record's sonic palette. Collaborations with local producers and musicians added textures that broadened the band's sound without losing their signature emotional intensity.</p><h2>Legacy</h2><p>Named Album of the Year by Rough Trade and included in numerous end-of-year lists, <em>Afterimage</em> expanded Glass Tides' audience significantly, leading to sold-out arena shows for the first time in their career.</p>",
+            "summary": "Afterimage, Glass Tides' fourth album, represented a turning point for the band. Moving away from the guitar-driven sound of their earlier work, the album embraced synthesizers, drum machines, and lay"
+          },
+          "releaseFormat": [
+            {
+              "id": "album",
+              "name": "album"
+            }
+          ],
+          "genre": [
+            {
+              "id": "electronic",
+              "name": "electronic"
+            },
+            {
+              "id": "indie-rock",
+              "name": "indie-rock"
+            }
+          ],
+          "releaseDate": {
+            "timestamp": 1711083600
+          },
+          "trackCount": 10,
+          "duration": "44:31",
+          "recordLabel": "Transgressive Records",
+          "coverArt": {
+            "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+            "alt": "Afterimage album cover - blurred city lights at night",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "tracklist": [
+            "Neon Haze",
+            "Slow Collapse",
+            "Berlin Winter",
+            "Phase Shift",
+            "The Quiet",
+            "Dissolve",
+            "Night Architecture",
+            "Under Streetlights",
+            "Fading Transmission",
+            "Morning After"
+          ],
+          "streamingUrl": "https://open.spotify.com/album/example2"
+        }
+      ]
+    }
+  }
+}

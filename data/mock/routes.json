@@ -1,0 +1,740 @@
+{
+  "/homepage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Glass Tides",
+          "path": "/homepage",
+          "heroTitle": "Glass Tides",
+          "heroSubtitle": "New Album 'Parallax' Out Now",
+          "heroDescription": {
+            "processed": "<p>Glass Tides is a four-piece indie electronic band from Bristol, UK. Our fifth studio album <em>Parallax</em> is available now on all platforms. Featuring the singles \"Hollow Light\" and \"Everything Fades.\"</p>",
+            "summary": "Glass Tides is a four-piece indie electronic band from Bristol, UK. Our fifth studio album Parallax is available now on all platforms. Featuring the singles \"Hollow Light\" and \"Everything Fades.\""
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-streams",
+              "title": "",
+              "number": "180M+",
+              "label": "Total Streams"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-shows",
+              "title": "",
+              "number": "500+",
+              "label": "Live Shows"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-albums",
+              "title": "",
+              "number": "5",
+              "label": "Studio Albums"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-countries",
+              "title": "",
+              "number": "28",
+              "label": "Countries Toured"
+            }
+          ],
+          "featuredItemsTitle": "Latest Releases",
+          "ctaTitle": "2026 World Tour Announced",
+          "ctaDescription": {
+            "processed": "<p>The Parallax World Tour kicks off in March 2026. 48 cities across North America, Europe, and Asia. Pre-sale tickets available now for newsletter subscribers.</p>",
+            "summary": "The Parallax World Tour kicks off in March 2026. 48 cities across North America, Europe, and Asia. Pre-sale tickets available now for newsletter subscribers."
+          },
+          "ctaPrimary": "Get Tickets",
+          "ctaSecondary": "Listen to Parallax"
+        }
+      }
+    }
+  },
+  "/music/parallax": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeRelease",
+          "id": "release-parallax",
+          "title": "Parallax",
+          "path": "/music/parallax",
+          "body": {
+            "processed": "<p><em>Parallax</em> is Glass Tides' fifth studio album and their most ambitious work to date. Recorded over 14 months at Monnow Valley Studio in Wales and Real World Studios in Bath, the album explores themes of perspective, distance, and the spaces between people.</p><h2>About the Album</h2><p>Produced by James Ford (Arctic Monkeys, Depeche Mode), <em>Parallax</em> marks a sonic evolution for the band, incorporating orchestral arrangements, analog synthesizers, and field recordings from their 2024 world tour. The result is a sweeping, cinematic record that critics have called \"their masterpiece.\"</p><h2>Critical Reception</h2><ul><li>Pitchfork: 8.7 - \"A band reaching their creative peak\"</li><li>NME: 5/5 - \"Astonishing in scope and intimacy\"</li><li>The Guardian: 4/5 - \"Dream-pop for the end of the world\"</li></ul>",
+            "summary": "Parallax is Glass Tides' fifth studio album and their most ambitious work to date. Recorded over 14 months at Monnow Valley Studio in Wales and Real World Studios in Bath, the album explores themes of"
+          },
+          "releaseFormat": [
+            {
+              "id": "album",
+              "name": "album"
+            }
+          ],
+          "genre": [
+            {
+              "id": "indie-rock",
+              "name": "indie-rock"
+            },
+            {
+              "id": "electronic",
+              "name": "electronic"
+            },
+            {
+              "id": "dream-pop",
+              "name": "dream-pop"
+            }
+          ],
+          "releaseDate": {
+            "timestamp": 1762581600
+          },
+          "trackCount": 12,
+          "duration": "52:14",
+          "recordLabel": "Transgressive Records",
+          "coverArt": {
+            "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80",
+            "alt": "Parallax album cover - abstract light refraction",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "tracklist": [
+            "Overture",
+            "Hollow Light",
+            "Everything Fades",
+            "Signal / Noise",
+            "The Distance Between",
+            "Parallax",
+            "Tidal Lock",
+            "Ghost Meridian",
+            "Weightless",
+            "Closer Still",
+            "The Return",
+            "Afterglow (Epilogue)"
+          ],
+          "streamingUrl": "https://open.spotify.com/album/example"
+        }
+      }
+    }
+  },
+  "/music/hollow-light-single": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeRelease",
+          "id": "release-hollow-light",
+          "title": "Hollow Light",
+          "path": "/music/hollow-light-single",
+          "body": {
+            "processed": "<p>The lead single from <em>Parallax</em>, \"Hollow Light\" is a shimmering, propulsive track built around a cascading synth arpeggio and vocalist Lena Voss's most powerful performance to date.</p><p>The accompanying music video, directed by Jonathan Glazer, was filmed in a single take in an abandoned observatory in the Atacama Desert.</p><h2>Reception</h2><p>\"Hollow Light\" debuted at #4 on the UK Singles Chart and topped the Billboard Alternative Airplay chart for three weeks. The music video has accumulated over 15 million views on YouTube.</p>",
+            "summary": "The lead single from Parallax, \"Hollow Light\" is a shimmering, propulsive track built around a cascading synth arpeggio and vocalist Lena Voss's most powerful performance to date.The accompanying musi"
+          },
+          "releaseFormat": [
+            {
+              "id": "single",
+              "name": "single"
+            }
+          ],
+          "genre": [
+            {
+              "id": "electronic",
+              "name": "electronic"
+            },
+            {
+              "id": "dream-pop",
+              "name": "dream-pop"
+            }
+          ],
+          "releaseDate": {
+            "timestamp": 1757653200
+          },
+          "trackCount": 1,
+          "duration": "4:38",
+          "recordLabel": "Transgressive Records",
+          "coverArt": {
+            "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=800&q=80",
+            "alt": "Hollow Light single artwork - light through prism",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "tracklist": [
+            "Hollow Light"
+          ],
+          "streamingUrl": "https://open.spotify.com/track/example"
+        }
+      }
+    }
+  },
+  "/music/afterimage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeRelease",
+          "id": "release-afterimage",
+          "title": "Afterimage",
+          "path": "/music/afterimage",
+          "body": {
+            "processed": "<p><em>Afterimage</em>, Glass Tides' fourth album, represented a turning point for the band. Moving away from the guitar-driven sound of their earlier work, the album embraced synthesizers, drum machines, and layered vocal harmonies to create something both danceable and deeply melancholic.</p><h2>About the Album</h2><p>Recorded in Berlin during the winter of 2023, the city's electronic music scene had a profound influence on the record's sonic palette. Collaborations with local producers and musicians added textures that broadened the band's sound without losing their signature emotional intensity.</p><h2>Legacy</h2><p>Named Album of the Year by Rough Trade and included in numerous end-of-year lists, <em>Afterimage</em> expanded Glass Tides' audience significantly, leading to sold-out arena shows for the first time in their career.</p>",
+            "summary": "Afterimage, Glass Tides' fourth album, represented a turning point for the band. Moving away from the guitar-driven sound of their earlier work, the album embraced synthesizers, drum machines, and lay"
+          },
+          "releaseFormat": [
+            {
+              "id": "album",
+              "name": "album"
+            }
+          ],
+          "genre": [
+            {
+              "id": "electronic",
+              "name": "electronic"
+            },
+            {
+              "id": "indie-rock",
+              "name": "indie-rock"
+            }
+          ],
+          "releaseDate": {
+            "timestamp": 1711083600
+          },
+          "trackCount": 10,
+          "duration": "44:31",
+          "recordLabel": "Transgressive Records",
+          "coverArt": {
+            "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+            "alt": "Afterimage album cover - blurred city lights at night",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "tracklist": [
+            "Neon Haze",
+            "Slow Collapse",
+            "Berlin Winter",
+            "Phase Shift",
+            "The Quiet",
+            "Dissolve",
+            "Night Architecture",
+            "Under Streetlights",
+            "Fading Transmission",
+            "Morning After"
+          ],
+          "streamingUrl": "https://open.spotify.com/album/example2"
+        }
+      }
+    }
+  },
+  "/tour/london-roundhouse": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTourDate",
+          "id": "tour-london",
+          "title": "London - The Roundhouse",
+          "path": "/tour/london-roundhouse",
+          "body": {
+            "processed": "<p>The European leg of the Parallax World Tour kicks off at London's legendary Roundhouse. This sold-out show will feature the full album performed with a string quartet, plus a special guest appearance from James Ford on keyboards.</p>",
+            "summary": "The European leg of the Parallax World Tour kicks off at London's legendary Roundhouse. This sold-out show will feature the full album performed with a string quartet, plus a special guest appearance "
+          },
+          "eventDate": {
+            "timestamp": 1773622800
+          },
+          "venueName": "The Roundhouse",
+          "city": "London",
+          "country": "United Kingdom",
+          "ticketUrl": "https://tickets.example.com/glass-tides-london",
+          "ticketPrice": "45 GBP",
+          "soldOut": true,
+          "supportAct": "Porridge Radio",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=800&q=80",
+            "alt": "The Roundhouse London venue",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/tour/berlin-columbiahalle": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTourDate",
+          "id": "tour-berlin",
+          "title": "Berlin - Columbiahalle",
+          "path": "/tour/berlin-columbiahalle",
+          "body": {
+            "processed": "<p>A return to the city where <em>Afterimage</em> was born. The Berlin show will feature extended, reworked versions of fan favorites alongside the new material.</p>",
+            "summary": "A return to the city where Afterimage was born. The Berlin show will feature extended, reworked versions of fan favorites alongside the new material."
+          },
+          "eventDate": {
+            "timestamp": 1774229400
+          },
+          "venueName": "Columbiahalle",
+          "city": "Berlin",
+          "country": "Germany",
+          "ticketUrl": "https://tickets.example.com/glass-tides-berlin",
+          "ticketPrice": "42 EUR",
+          "soldOut": false,
+          "supportAct": "Moderat",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=800&q=80",
+            "alt": "Berlin concert venue with dramatic lighting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/tour/brooklyn-steel": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTourDate",
+          "id": "tour-brooklyn",
+          "title": "Brooklyn - Brooklyn Steel",
+          "path": "/tour/brooklyn-steel",
+          "body": {
+            "processed": "<p>Two nights at Brooklyn Steel to open the North American leg. Both shows sold out within 12 minutes of going on sale.</p>",
+            "summary": "Two nights at Brooklyn Steel to open the North American leg. Both shows sold out within 12 minutes of going on sale."
+          },
+          "eventDate": {
+            "timestamp": 1776560400
+          },
+          "venueName": "Brooklyn Steel",
+          "city": "Brooklyn, NY",
+          "country": "United States",
+          "ticketUrl": "https://tickets.example.com/glass-tides-brooklyn",
+          "ticketPrice": "$55",
+          "soldOut": true,
+          "supportAct": "Alvvays",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+            "alt": "Brooklyn Steel concert venue stage",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/tour/tokyo-garden-hall": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTourDate",
+          "id": "tour-tokyo",
+          "title": "Tokyo - Garden Hall",
+          "path": "/tour/tokyo-garden-hall",
+          "body": {
+            "processed": "<p>Glass Tides' first ever shows in Japan. The band has developed a devoted following in Tokyo through streaming, and this show marks a long-awaited debut in the city.</p>",
+            "summary": "Glass Tides' first ever shows in Japan. The band has developed a devoted following in Tokyo through streaming, and this show marks a long-awaited debut in the city."
+          },
+          "eventDate": {
+            "timestamp": 1779323400
+          },
+          "venueName": "Garden Hall",
+          "city": "Tokyo",
+          "country": "Japan",
+          "ticketUrl": "https://tickets.example.com/glass-tides-tokyo",
+          "ticketPrice": "6,500 JPY",
+          "soldOut": false,
+          "supportAct": "toe",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+            "alt": "Tokyo cityscape at night with neon lights",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/band/lena-voss": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBio",
+          "id": "bio-lena",
+          "title": "Lena Voss",
+          "path": "/band/lena-voss",
+          "body": {
+            "processed": "<p>Lena is the vocalist and lyricist of Glass Tides. Born in Stockholm and raised in Bristol, her voice -- a crystalline soprano that can shift from whispered intimacy to soaring power -- has become the band's most recognizable element.</p><p>Before forming Glass Tides, Lena studied literature at the University of Bristol and performed in the city's DIY music scene. Her lyrics draw heavily from poetry, particularly the work of Anne Carson and Ocean Vuong, blending personal narrative with abstract imagery.</p><p>Outside the band, Lena has collaborated with ambient producer Nils Frahm and contributed vocals to the soundtrack of A24 film <em>The Drift</em>.</p>",
+            "summary": "Lena is the vocalist and lyricist of Glass Tides. Born in Stockholm and raised in Bristol, her voice -- a crystalline soprano that can shift from whispered intimacy to soaring power -- has become the "
+          },
+          "memberRole": "Vocals & Lyrics",
+          "joinedYear": "2016",
+          "influences": [
+            "Bjork",
+            "Cocteau Twins",
+            "Radiohead",
+            "Kate Bush"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+            "alt": "Lena Voss - Vocalist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/band/tom-ashford": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBio",
+          "id": "bio-tom",
+          "title": "Tom Ashford",
+          "path": "/band/tom-ashford",
+          "body": {
+            "processed": "<p>Tom is the guitarist and primary composer of Glass Tides. His playing style combines shimmering delay-laden textures with precise melodic lines, creating the band's signature wall-of-sound guitar work.</p><p>A classically trained guitarist who fell in love with effects pedals, Tom's pedalboard is legendary among gear enthusiasts -- a sprawling 24-pedal setup that he calls \"the spaceship.\" He builds custom effects pedals in his spare time and runs a small pedal company, Ashford Electronics.</p><p>Tom and Lena co-write most of the band's material, typically starting from Tom's instrumental compositions which Lena then shapes with vocal melodies and lyrics.</p>",
+            "summary": "Tom is the guitarist and primary composer of Glass Tides. His playing style combines shimmering delay-laden textures with precise melodic lines, creating the band's signature wall-of-sound guitar work"
+          },
+          "memberRole": "Guitar & Composition",
+          "joinedYear": "2016",
+          "influences": [
+            "My Bloody Valentine",
+            "Boards of Canada",
+            "Jonny Greenwood",
+            "The Edge"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+            "alt": "Tom Ashford - Guitarist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/band/sara-kim": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBio",
+          "id": "bio-sara",
+          "title": "Sara Kim",
+          "path": "/band/sara-kim",
+          "body": {
+            "processed": "<p>Sara is the band's bassist and synth programmer. Her background in electronic music production gives Glass Tides their rhythmic foundation, bridging the gap between organic instrumentation and electronic textures.</p><p>Before joining Glass Tides in 2017, Sara was producing electronic music under the alias SK_NULL, releasing two EPs on the Hyperdub label. She continues to produce solo material between album cycles.</p><p>Sara is also the band's studio engineer, having designed and built the recording setup they use for demos and pre-production.</p>",
+            "summary": "Sara is the band's bassist and synth programmer. Her background in electronic music production gives Glass Tides their rhythmic foundation, bridging the gap between organic instrumentation and electro"
+          },
+          "memberRole": "Bass & Synthesizers",
+          "joinedYear": "2017",
+          "influences": [
+            "Burial",
+            "Joy Division",
+            "Massive Attack",
+            "Portishead"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Sara Kim - Bassist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/band/jake-okoye": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBio",
+          "id": "bio-jake",
+          "title": "Jake Okoye",
+          "path": "/band/jake-okoye",
+          "body": {
+            "processed": "<p>Jake is the drummer and percussionist of Glass Tides. His drumming style -- precise, dynamic, and deeply groovy -- provides the rhythmic backbone that keeps the band's expansive soundscapes grounded and physical.</p><p>Jake grew up playing in his father's jazz ensemble in Birmingham before studying at the Royal Academy of Music. His jazz background is evident in his fluid, conversational playing style, particularly on the band's live recordings where his improvisational instincts shine.</p><p>He is the newest member of Glass Tides, joining in 2018 after the departure of original drummer Callum Webb.</p>",
+            "summary": "Jake is the drummer and percussionist of Glass Tides. His drumming style -- precise, dynamic, and deeply groovy -- provides the rhythmic backbone that keeps the band's expansive soundscapes grounded a"
+          },
+          "memberRole": "Drums & Percussion",
+          "joinedYear": "2018",
+          "influences": [
+            "Brian Blade",
+            "Zach Hill",
+            "Jaki Liebezeit",
+            "Steve Gadd"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "alt": "Jake Okoye - Drummer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "page-about",
+          "title": "About Glass Tides",
+          "path": "/about",
+          "body": {
+            "processed": "<p>Glass Tides is a four-piece indie electronic band formed in Bristol, UK in 2016. The band -- Lena Voss (vocals), Tom Ashford (guitar), Sara Kim (bass/synths), and Jake Okoye (drums) -- creates music that blurs the line between dream-pop, electronic, and post-rock.</p><h2>History</h2><p>Formed from the remnants of two local Bristol bands, Glass Tides quickly gained attention with their self-titled debut EP in 2017. Their first full-length album, <em>Coastal Frequencies</em> (2019), earned them a nomination for BBC Sound Of 2020 and established their reputation for lush, cinematic soundscapes.</p><p>Five albums and over 500 live shows later, Glass Tides have grown from a Bristol pub band to an internationally touring act that fills arenas across Europe and sells out iconic venues worldwide.</p><h2>Discography</h2><ul><li><em>Parallax</em> (2025)</li><li><em>Afterimage</em> (2024)</li><li><em>Luminous Drift</em> (2022)</li><li><em>Tidal Patterns</em> (2020)</li><li><em>Coastal Frequencies</em> (2019)</li></ul>",
+            "summary": "Glass Tides is a four-piece indie electronic band formed in Bristol, UK in 2016. The band -- Lena Voss (vocals), Tom Ashford (guitar), Sara Kim (bass/synths), and Jake Okoye (drums) -- creates music t"
+          }
+        }
+      }
+    }
+  },
+  "/contact": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "page-contact",
+          "title": "Contact & Bookings",
+          "path": "/contact",
+          "body": {
+            "processed": "<h2>Management</h2><p>Astra Management<br/>Sarah Morrison<br/>sarah@astramanagement.com</p><h2>Booking (Europe & Asia)</h2><p>Primary Talent International<br/>booking-eu@primarytalent.com</p><h2>Booking (North America)</h2><p>Paradigm Talent Agency<br/>booking-na@paradigmagency.com</p><h2>Press & Media</h2><p>For interview requests, photo permissions, and press inquiries:<br/>press@glasstides.com</p><h2>Fan Mail</h2><p>Glass Tides<br/>PO Box 4821<br/>Bristol BS1 9ZX<br/>United Kingdom</p>",
+            "summary": "ManagementAstra ManagementSarah Morrisonsarah@astramanagement.comBooking (Europe & Asia)Primary Talent Internationalbooking-eu@primarytalent.comBooking (North America)Paradigm Talent Agencybooking-na@"
+          }
+        }
+      }
+    }
+  }
+}

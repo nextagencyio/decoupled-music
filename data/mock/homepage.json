@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Glass Tides",
+          "path": "/homepage",
+          "heroTitle": "Glass Tides",
+          "heroSubtitle": "New Album 'Parallax' Out Now",
+          "heroDescription": {
+            "processed": "<p>Glass Tides is a four-piece indie electronic band from Bristol, UK. Our fifth studio album <em>Parallax</em> is available now on all platforms. Featuring the singles \"Hollow Light\" and \"Everything Fades.\"</p>",
+            "summary": "Glass Tides is a four-piece indie electronic band from Bristol, UK. Our fifth studio album Parallax is available now on all platforms. Featuring the singles \"Hollow Light\" and \"Everything Fades.\""
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-streams",
+              "title": "",
+              "number": "180M+",
+              "label": "Total Streams"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-shows",
+              "title": "",
+              "number": "500+",
+              "label": "Live Shows"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-albums",
+              "title": "",
+              "number": "5",
+              "label": "Studio Albums"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-countries",
+              "title": "",
+              "number": "28",
+              "label": "Countries Toured"
+            }
+          ],
+          "featuredItemsTitle": "Latest Releases",
+          "ctaTitle": "2026 World Tour Announced",
+          "ctaDescription": {
+            "processed": "<p>The Parallax World Tour kicks off in March 2026. 48 cities across North America, Europe, and Asia. Pre-sale tickets available now for newsletter subscribers.</p>",
+            "summary": "The Parallax World Tour kicks off in March 2026. 48 cities across North America, Europe, and Asia. Pre-sale tickets available now for newsletter subscribers."
+          },
+          "ctaPrimary": "Get Tickets",
+          "ctaSecondary": "Listen to Parallax"
+        }
+      ]
+    }
+  }
+}

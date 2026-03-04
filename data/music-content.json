@@ -1,0 +1,387 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Music artist/band homepage with hero, stats, featured releases, and CTA",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]" },
+        { "id": "featured_items_title", "label": "Featured Items Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "release",
+      "label": "Release",
+      "description": "Music releases including albums, EPs, and singles",
+      "body": true,
+      "fields": [
+        { "id": "release_format", "label": "Release Format", "type": "term(release_formats)[]" },
+        { "id": "genre", "label": "Genre", "type": "term(genres)[]" },
+        { "id": "release_date", "label": "Release Date", "type": "datetime" },
+        { "id": "track_count", "label": "Track Count", "type": "integer" },
+        { "id": "duration", "label": "Duration", "type": "string" },
+        { "id": "record_label", "label": "Record Label", "type": "string" },
+        { "id": "cover_art", "label": "Cover Art", "type": "image" },
+        { "id": "tracklist", "label": "Tracklist", "type": "string[]" },
+        { "id": "streaming_url", "label": "Streaming URL", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "tour_date",
+      "label": "Tour Date",
+      "description": "Upcoming and past tour dates and live performances",
+      "body": true,
+      "fields": [
+        { "id": "event_date", "label": "Event Date", "type": "datetime" },
+        { "id": "venue_name", "label": "Venue Name", "type": "string" },
+        { "id": "city", "label": "City", "type": "string" },
+        { "id": "country", "label": "Country", "type": "string" },
+        { "id": "ticket_url", "label": "Ticket URL", "type": "string" },
+        { "id": "ticket_price", "label": "Ticket Price", "type": "string" },
+        { "id": "sold_out", "label": "Sold Out", "type": "bool" },
+        { "id": "support_act", "label": "Support Act", "type": "string" },
+        { "id": "image", "label": "Event Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "bio",
+      "label": "Bio",
+      "description": "Band member biographies and profiles",
+      "body": true,
+      "fields": [
+        { "id": "member_role", "label": "Role/Instrument", "type": "string" },
+        { "id": "joined_year", "label": "Year Joined", "type": "string" },
+        { "id": "influences", "label": "Influences", "type": "string[]" },
+        { "id": "photo", "label": "Photo", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!" },
+        { "id": "label", "label": "Label", "type": "string!" }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "release_formats",
+      "label": "Release Formats",
+      "terms": ["album", "ep", "single", "live", "remix", "compilation"]
+    },
+    {
+      "vocabulary": "genres",
+      "label": "Genres",
+      "terms": ["indie-rock", "electronic", "dream-pop", "post-punk", "shoegaze", "ambient"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-streams",
+      "type": "paragraph.stat_item",
+      "values": { "number": "180M+", "label": "Total Streams" }
+    },
+    {
+      "id": "stat-shows",
+      "type": "paragraph.stat_item",
+      "values": { "number": "500+", "label": "Live Shows" }
+    },
+    {
+      "id": "stat-albums",
+      "type": "paragraph.stat_item",
+      "values": { "number": "5", "label": "Studio Albums" }
+    },
+    {
+      "id": "stat-countries",
+      "type": "paragraph.stat_item",
+      "values": { "number": "28", "label": "Countries Toured" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to Glass Tides",
+        "hero_title": "Glass Tides",
+        "hero_subtitle": "New Album 'Parallax' Out Now",
+        "hero_description": "<p>Glass Tides is a four-piece indie electronic band from Bristol, UK. Our fifth studio album <em>Parallax</em> is available now on all platforms. Featuring the singles \"Hollow Light\" and \"Everything Fades.\"</p>",
+        "stats_items": ["@stat-streams", "@stat-shows", "@stat-albums", "@stat-countries"],
+        "featured_items_title": "Latest Releases",
+        "cta_title": "2026 World Tour Announced",
+        "cta_description": "<p>The Parallax World Tour kicks off in March 2026. 48 cities across North America, Europe, and Asia. Pre-sale tickets available now for newsletter subscribers.</p>",
+        "cta_primary": "Get Tickets",
+        "cta_secondary": "Listen to Parallax"
+      }
+    },
+    {
+      "id": "release-parallax",
+      "type": "node.release",
+      "path": "/music/parallax",
+      "values": {
+        "title": "Parallax",
+        "body": "<p><em>Parallax</em> is Glass Tides' fifth studio album and their most ambitious work to date. Recorded over 14 months at Monnow Valley Studio in Wales and Real World Studios in Bath, the album explores themes of perspective, distance, and the spaces between people.</p><h2>About the Album</h2><p>Produced by James Ford (Arctic Monkeys, Depeche Mode), <em>Parallax</em> marks a sonic evolution for the band, incorporating orchestral arrangements, analog synthesizers, and field recordings from their 2024 world tour. The result is a sweeping, cinematic record that critics have called \"their masterpiece.\"</p><h2>Critical Reception</h2><ul><li>Pitchfork: 8.7 - \"A band reaching their creative peak\"</li><li>NME: 5/5 - \"Astonishing in scope and intimacy\"</li><li>The Guardian: 4/5 - \"Dream-pop for the end of the world\"</li></ul>",
+        "release_format": ["album"],
+        "genre": ["indie-rock", "electronic", "dream-pop"],
+        "release_date": "2025-11-08T00:00:00",
+        "track_count": 12,
+        "duration": "52:14",
+        "record_label": "Transgressive Records",
+        "cover_art": {
+          "uri": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80",
+          "alt": "Parallax album cover - abstract light refraction"
+        },
+        "tracklist": [
+          "Overture",
+          "Hollow Light",
+          "Everything Fades",
+          "Signal / Noise",
+          "The Distance Between",
+          "Parallax",
+          "Tidal Lock",
+          "Ghost Meridian",
+          "Weightless",
+          "Closer Still",
+          "The Return",
+          "Afterglow (Epilogue)"
+        ],
+        "streaming_url": "https://open.spotify.com/album/example"
+      }
+    },
+    {
+      "id": "release-hollow-light",
+      "type": "node.release",
+      "path": "/music/hollow-light-single",
+      "values": {
+        "title": "Hollow Light",
+        "body": "<p>The lead single from <em>Parallax</em>, \"Hollow Light\" is a shimmering, propulsive track built around a cascading synth arpeggio and vocalist Lena Voss's most powerful performance to date.</p><p>The accompanying music video, directed by Jonathan Glazer, was filmed in a single take in an abandoned observatory in the Atacama Desert.</p><h2>Reception</h2><p>\"Hollow Light\" debuted at #4 on the UK Singles Chart and topped the Billboard Alternative Airplay chart for three weeks. The music video has accumulated over 15 million views on YouTube.</p>",
+        "release_format": ["single"],
+        "genre": ["electronic", "dream-pop"],
+        "release_date": "2025-09-12T00:00:00",
+        "track_count": 1,
+        "duration": "4:38",
+        "record_label": "Transgressive Records",
+        "cover_art": {
+          "uri": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?w=800&q=80",
+          "alt": "Hollow Light single artwork - light through prism"
+        },
+        "tracklist": ["Hollow Light"],
+        "streaming_url": "https://open.spotify.com/track/example"
+      }
+    },
+    {
+      "id": "release-afterimage",
+      "type": "node.release",
+      "path": "/music/afterimage",
+      "values": {
+        "title": "Afterimage",
+        "body": "<p><em>Afterimage</em>, Glass Tides' fourth album, represented a turning point for the band. Moving away from the guitar-driven sound of their earlier work, the album embraced synthesizers, drum machines, and layered vocal harmonies to create something both danceable and deeply melancholic.</p><h2>About the Album</h2><p>Recorded in Berlin during the winter of 2023, the city's electronic music scene had a profound influence on the record's sonic palette. Collaborations with local producers and musicians added textures that broadened the band's sound without losing their signature emotional intensity.</p><h2>Legacy</h2><p>Named Album of the Year by Rough Trade and included in numerous end-of-year lists, <em>Afterimage</em> expanded Glass Tides' audience significantly, leading to sold-out arena shows for the first time in their career.</p>",
+        "release_format": ["album"],
+        "genre": ["electronic", "indie-rock"],
+        "release_date": "2024-03-22T00:00:00",
+        "track_count": 10,
+        "duration": "44:31",
+        "record_label": "Transgressive Records",
+        "cover_art": {
+          "uri": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+          "alt": "Afterimage album cover - blurred city lights at night"
+        },
+        "tracklist": [
+          "Neon Haze",
+          "Slow Collapse",
+          "Berlin Winter",
+          "Phase Shift",
+          "The Quiet",
+          "Dissolve",
+          "Night Architecture",
+          "Under Streetlights",
+          "Fading Transmission",
+          "Morning After"
+        ],
+        "streaming_url": "https://open.spotify.com/album/example2"
+      }
+    },
+    {
+      "id": "tour-london",
+      "type": "node.tour_date",
+      "path": "/tour/london-roundhouse",
+      "values": {
+        "title": "London - The Roundhouse",
+        "body": "<p>The European leg of the Parallax World Tour kicks off at London's legendary Roundhouse. This sold-out show will feature the full album performed with a string quartet, plus a special guest appearance from James Ford on keyboards.</p>",
+        "event_date": "2026-03-15T20:00:00",
+        "venue_name": "The Roundhouse",
+        "city": "London",
+        "country": "United Kingdom",
+        "ticket_url": "https://tickets.example.com/glass-tides-london",
+        "ticket_price": "45 GBP",
+        "sold_out": true,
+        "support_act": "Porridge Radio",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=800&q=80",
+          "alt": "The Roundhouse London venue"
+        }
+      }
+    },
+    {
+      "id": "tour-berlin",
+      "type": "node.tour_date",
+      "path": "/tour/berlin-columbiahalle",
+      "values": {
+        "title": "Berlin - Columbiahalle",
+        "body": "<p>A return to the city where <em>Afterimage</em> was born. The Berlin show will feature extended, reworked versions of fan favorites alongside the new material.</p>",
+        "event_date": "2026-03-22T20:30:00",
+        "venue_name": "Columbiahalle",
+        "city": "Berlin",
+        "country": "Germany",
+        "ticket_url": "https://tickets.example.com/glass-tides-berlin",
+        "ticket_price": "42 EUR",
+        "sold_out": false,
+        "support_act": "Moderat",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=800&q=80",
+          "alt": "Berlin concert venue with dramatic lighting"
+        }
+      }
+    },
+    {
+      "id": "tour-brooklyn",
+      "type": "node.tour_date",
+      "path": "/tour/brooklyn-steel",
+      "values": {
+        "title": "Brooklyn - Brooklyn Steel",
+        "body": "<p>Two nights at Brooklyn Steel to open the North American leg. Both shows sold out within 12 minutes of going on sale.</p>",
+        "event_date": "2026-04-18T20:00:00",
+        "venue_name": "Brooklyn Steel",
+        "city": "Brooklyn, NY",
+        "country": "United States",
+        "ticket_url": "https://tickets.example.com/glass-tides-brooklyn",
+        "ticket_price": "$55",
+        "sold_out": true,
+        "support_act": "Alvvays",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+          "alt": "Brooklyn Steel concert venue stage"
+        }
+      }
+    },
+    {
+      "id": "tour-tokyo",
+      "type": "node.tour_date",
+      "path": "/tour/tokyo-garden-hall",
+      "values": {
+        "title": "Tokyo - Garden Hall",
+        "body": "<p>Glass Tides' first ever shows in Japan. The band has developed a devoted following in Tokyo through streaming, and this show marks a long-awaited debut in the city.</p>",
+        "event_date": "2026-05-20T19:30:00",
+        "venue_name": "Garden Hall",
+        "city": "Tokyo",
+        "country": "Japan",
+        "ticket_url": "https://tickets.example.com/glass-tides-tokyo",
+        "ticket_price": "6,500 JPY",
+        "sold_out": false,
+        "support_act": "toe",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+          "alt": "Tokyo cityscape at night with neon lights"
+        }
+      }
+    },
+    {
+      "id": "bio-lena",
+      "type": "node.bio",
+      "path": "/band/lena-voss",
+      "values": {
+        "title": "Lena Voss",
+        "body": "<p>Lena is the vocalist and lyricist of Glass Tides. Born in Stockholm and raised in Bristol, her voice -- a crystalline soprano that can shift from whispered intimacy to soaring power -- has become the band's most recognizable element.</p><p>Before forming Glass Tides, Lena studied literature at the University of Bristol and performed in the city's DIY music scene. Her lyrics draw heavily from poetry, particularly the work of Anne Carson and Ocean Vuong, blending personal narrative with abstract imagery.</p><p>Outside the band, Lena has collaborated with ambient producer Nils Frahm and contributed vocals to the soundtrack of A24 film <em>The Drift</em>.</p>",
+        "member_role": "Vocals & Lyrics",
+        "joined_year": "2016",
+        "influences": ["Bjork", "Cocteau Twins", "Radiohead", "Kate Bush"],
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+          "alt": "Lena Voss - Vocalist"
+        }
+      }
+    },
+    {
+      "id": "bio-tom",
+      "type": "node.bio",
+      "path": "/band/tom-ashford",
+      "values": {
+        "title": "Tom Ashford",
+        "body": "<p>Tom is the guitarist and primary composer of Glass Tides. His playing style combines shimmering delay-laden textures with precise melodic lines, creating the band's signature wall-of-sound guitar work.</p><p>A classically trained guitarist who fell in love with effects pedals, Tom's pedalboard is legendary among gear enthusiasts -- a sprawling 24-pedal setup that he calls \"the spaceship.\" He builds custom effects pedals in his spare time and runs a small pedal company, Ashford Electronics.</p><p>Tom and Lena co-write most of the band's material, typically starting from Tom's instrumental compositions which Lena then shapes with vocal melodies and lyrics.</p>",
+        "member_role": "Guitar & Composition",
+        "joined_year": "2016",
+        "influences": ["My Bloody Valentine", "Boards of Canada", "Jonny Greenwood", "The Edge"],
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+          "alt": "Tom Ashford - Guitarist"
+        }
+      }
+    },
+    {
+      "id": "bio-sara",
+      "type": "node.bio",
+      "path": "/band/sara-kim",
+      "values": {
+        "title": "Sara Kim",
+        "body": "<p>Sara is the band's bassist and synth programmer. Her background in electronic music production gives Glass Tides their rhythmic foundation, bridging the gap between organic instrumentation and electronic textures.</p><p>Before joining Glass Tides in 2017, Sara was producing electronic music under the alias SK_NULL, releasing two EPs on the Hyperdub label. She continues to produce solo material between album cycles.</p><p>Sara is also the band's studio engineer, having designed and built the recording setup they use for demos and pre-production.</p>",
+        "member_role": "Bass & Synthesizers",
+        "joined_year": "2017",
+        "influences": ["Burial", "Joy Division", "Massive Attack", "Portishead"],
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+          "alt": "Sara Kim - Bassist"
+        }
+      }
+    },
+    {
+      "id": "bio-jake",
+      "type": "node.bio",
+      "path": "/band/jake-okoye",
+      "values": {
+        "title": "Jake Okoye",
+        "body": "<p>Jake is the drummer and percussionist of Glass Tides. His drumming style -- precise, dynamic, and deeply groovy -- provides the rhythmic backbone that keeps the band's expansive soundscapes grounded and physical.</p><p>Jake grew up playing in his father's jazz ensemble in Birmingham before studying at the Royal Academy of Music. His jazz background is evident in his fluid, conversational playing style, particularly on the band's live recordings where his improvisational instincts shine.</p><p>He is the newest member of Glass Tides, joining in 2018 after the departure of original drummer Callum Webb.</p>",
+        "member_role": "Drums & Percussion",
+        "joined_year": "2018",
+        "influences": ["Brian Blade", "Zach Hill", "Jaki Liebezeit", "Steve Gadd"],
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+          "alt": "Jake Okoye - Drummer"
+        }
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Glass Tides",
+        "body": "<p>Glass Tides is a four-piece indie electronic band formed in Bristol, UK in 2016. The band -- Lena Voss (vocals), Tom Ashford (guitar), Sara Kim (bass/synths), and Jake Okoye (drums) -- creates music that blurs the line between dream-pop, electronic, and post-rock.</p><h2>History</h2><p>Formed from the remnants of two local Bristol bands, Glass Tides quickly gained attention with their self-titled debut EP in 2017. Their first full-length album, <em>Coastal Frequencies</em> (2019), earned them a nomination for BBC Sound Of 2020 and established their reputation for lush, cinematic soundscapes.</p><p>Five albums and over 500 live shows later, Glass Tides have grown from a Bristol pub band to an internationally touring act that fills arenas across Europe and sells out iconic venues worldwide.</p><h2>Discography</h2><ul><li><em>Parallax</em> (2025)</li><li><em>Afterimage</em> (2024)</li><li><em>Luminous Drift</em> (2022)</li><li><em>Tidal Patterns</em> (2020)</li><li><em>Coastal Frequencies</em> (2019)</li></ul>"
+      }
+    },
+    {
+      "id": "page-contact",
+      "type": "node.page",
+      "path": "/contact",
+      "values": {
+        "title": "Contact & Bookings",
+        "body": "<h2>Management</h2><p>Astra Management<br/>Sarah Morrison<br/>sarah@astramanagement.com</p><h2>Booking (Europe & Asia)</h2><p>Primary Talent International<br/>booking-eu@primarytalent.com</p><h2>Booking (North America)</h2><p>Paradigm Talent Agency<br/>booking-na@paradigmagency.com</p><h2>Press & Media</h2><p>For interview requests, photo permissions, and press inquiries:<br/>press@glasstides.com</p><h2>Fan Mail</h2><p>Glass Tides<br/>PO Box 4821<br/>Bristol BS1 9ZX<br/>United Kingdom</p>"
+      }
+    }
+  ]
+}

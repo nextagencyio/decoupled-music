@@ -1,0 +1,193 @@
+{
+  "data": {
+    "nodeTourDates": {
+      "__typename": "NodeTourDateConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTourDate",
+          "id": "tour-london",
+          "title": "London - The Roundhouse",
+          "path": "/tour/london-roundhouse",
+          "body": {
+            "processed": "<p>The European leg of the Parallax World Tour kicks off at London's legendary Roundhouse. This sold-out show will feature the full album performed with a string quartet, plus a special guest appearance from James Ford on keyboards.</p>",
+            "summary": "The European leg of the Parallax World Tour kicks off at London's legendary Roundhouse. This sold-out show will feature the full album performed with a string quartet, plus a special guest appearance "
+          },
+          "eventDate": {
+            "timestamp": 1773622800
+          },
+          "venueName": "The Roundhouse",
+          "city": "London",
+          "country": "United Kingdom",
+          "ticketUrl": "https://tickets.example.com/glass-tides-london",
+          "ticketPrice": "45 GBP",
+          "soldOut": true,
+          "supportAct": "Porridge Radio",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=800&q=80",
+            "alt": "The Roundhouse London venue",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTourDate",
+          "id": "tour-berlin",
+          "title": "Berlin - Columbiahalle",
+          "path": "/tour/berlin-columbiahalle",
+          "body": {
+            "processed": "<p>A return to the city where <em>Afterimage</em> was born. The Berlin show will feature extended, reworked versions of fan favorites alongside the new material.</p>",
+            "summary": "A return to the city where Afterimage was born. The Berlin show will feature extended, reworked versions of fan favorites alongside the new material."
+          },
+          "eventDate": {
+            "timestamp": 1774229400
+          },
+          "venueName": "Columbiahalle",
+          "city": "Berlin",
+          "country": "Germany",
+          "ticketUrl": "https://tickets.example.com/glass-tides-berlin",
+          "ticketPrice": "42 EUR",
+          "soldOut": false,
+          "supportAct": "Moderat",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=800&q=80",
+            "alt": "Berlin concert venue with dramatic lighting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1514533212735-5df27d970db0?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTourDate",
+          "id": "tour-brooklyn",
+          "title": "Brooklyn - Brooklyn Steel",
+          "path": "/tour/brooklyn-steel",
+          "body": {
+            "processed": "<p>Two nights at Brooklyn Steel to open the North American leg. Both shows sold out within 12 minutes of going on sale.</p>",
+            "summary": "Two nights at Brooklyn Steel to open the North American leg. Both shows sold out within 12 minutes of going on sale."
+          },
+          "eventDate": {
+            "timestamp": 1776560400
+          },
+          "venueName": "Brooklyn Steel",
+          "city": "Brooklyn, NY",
+          "country": "United States",
+          "ticketUrl": "https://tickets.example.com/glass-tides-brooklyn",
+          "ticketPrice": "$55",
+          "soldOut": true,
+          "supportAct": "Alvvays",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+            "alt": "Brooklyn Steel concert venue stage",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTourDate",
+          "id": "tour-tokyo",
+          "title": "Tokyo - Garden Hall",
+          "path": "/tour/tokyo-garden-hall",
+          "body": {
+            "processed": "<p>Glass Tides' first ever shows in Japan. The band has developed a devoted following in Tokyo through streaming, and this show marks a long-awaited debut in the city.</p>",
+            "summary": "Glass Tides' first ever shows in Japan. The band has developed a devoted following in Tokyo through streaming, and this show marks a long-awaited debut in the city."
+          },
+          "eventDate": {
+            "timestamp": 1779323400
+          },
+          "venueName": "Garden Hall",
+          "city": "Tokyo",
+          "country": "Japan",
+          "ticketUrl": "https://tickets.example.com/glass-tides-tokyo",
+          "ticketPrice": "6,500 JPY",
+          "soldOut": false,
+          "supportAct": "toe",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+            "alt": "Tokyo cityscape at night with neon lights",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
