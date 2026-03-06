@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-streams",
               "title": "",
-              "number": "180M+",
+              "number": "180M+", "value": "180M+",
               "label": "Total Streams"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-shows",
               "title": "",
-              "number": "500+",
+              "number": "500+", "value": "500+",
               "label": "Live Shows"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-albums",
               "title": "",
-              "number": "5",
+              "number": "5", "value": "5",
               "label": "Studio Albums"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-countries",
               "title": "",
-              "number": "28",
+              "number": "28", "value": "28",
               "label": "Countries Toured"
             }
           ],
