@@ -29,7 +29,7 @@ export default function StatsSection({ homepageContent }: StatsSectionProps) {
             return (
               <div key={stat.id || i} className="flex flex-col items-center group">
                 <div className={`w-28 h-28 md:w-32 md:h-32 rounded-full border-4 ${colorClass} flex flex-col items-center justify-center mb-4 group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 shadow-md`}>
-                  <div className="text-2xl md:text-3xl font-bold font-display">{stat.value || stat.statValue}</div>
+                  <div className="text-2xl md:text-3xl font-bold font-display">{stat.value || stat.number || stat.statValue}</div>
                 </div>
                 <span className="font-bold font-display text-gray-800 text-center text-sm md:text-base">{stat.label || stat.statLabel || stat.title}</span>
               </div>
