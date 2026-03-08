@@ -10,6 +10,7 @@ import ResponsiveImage from '../../components/ResponsiveImage'
 import { ArrowLeft } from 'lucide-react'
 
 export const revalidate = 300
+export const dynamic = 'force-dynamic'
 
 interface PageProps {
   params: Promise<{ slug: string[] }>

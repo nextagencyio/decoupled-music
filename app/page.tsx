@@ -8,6 +8,7 @@ import { GET_HOMEPAGE_DATA } from '../lib/queries'
 import { checkConfiguration } from '../lib/config-check'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 async function getHomepageData(apolloClient: ReturnType<typeof getServerApolloClient>) {
   try {
