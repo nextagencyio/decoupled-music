@@ -1,5 +1,6 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
+import { isDemoMode, handleMockQuery } from './demo-mode'
 
 function getServerBaseUrl(): string {
   // Prefer an explicit site URL if provided (e.g., https://example.com).
@@ -29,6 +30,25 @@ function getGraphqlUri(): string {
   return `${getServerBaseUrl()}/api/graphql`
 }
 
+async function fetchGraphql(
+  uri: RequestInfo | URL,
+  options?: RequestInit,
+  withTags = false
+): Promise<Response> {
+  if (typeof window === 'undefined' && isDemoMode()) {
+    const body = typeof options?.body === 'string' ? options.body : '{}'
+    return new Response(JSON.stringify(handleMockQuery(body)), {
+      headers: { 'Content-Type': 'application/json' },
+    })
+  }
+
+  if (withTags) {
+    return fetch(uri, { ...options, next: { tags: ['drupal'] } } as RequestInit)
+  }
+
+  return fetch(uri, options)
+}
+
 // Client-side singleton to avoid re-creating the client.
 let browserClient: ApolloClient<any> | null = null
 
@@ -43,7 +63,7 @@ export function getServerApolloClient(requestHeaders: Headers): ApolloClient<any
     uri: `${origin}/api/graphql`,
     // Tag fetch requests so revalidateTag('drupal') clears the Data Cache
     fetch: (uri: RequestInfo | URL, options?: RequestInit) =>
-      fetch(uri, { ...options, next: { tags: ['drupal'] } } as RequestInit),
+      fetchGraphql(uri, options, true),
   })
 
   const authLink = setContext((_, { headers }) => {
@@ -72,6 +92,7 @@ export function getServerApolloClient(requestHeaders: Headers): ApolloClient<any
 // Default export remains for client usage via ApolloProvider.
 const httpLink = createHttpLink({
   uri: getGraphqlUri(),
+  fetch: (uri: RequestInfo | URL, options?: RequestInit) => fetchGraphql(uri, options),
 })
 
 const authLink = setContext((_, { headers }) => {
