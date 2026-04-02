@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getBios() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_BIOS, { first: 50 })
+    const data = await client.raw(GET_BIOS, { first: 50 })
     return data?.nodeBios?.nodes || []
   } catch (error) {
     console.error('Error fetching bios:', error)
@@ -53,7 +53,7 @@ export default async function BiosPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {items.map((item) => (
+              {items.map((item: any) => (
                 <BioCard key={item.id} item={item} />
               ))}
             </div>

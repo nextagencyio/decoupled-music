@@ -24,7 +24,7 @@ interface BioByPathData {
 async function getBio(path: string): Promise<DrupalBio | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_BIO_BY_PATH, { path })
+    const data = await client.raw(GET_BIO_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching bio:', error)
