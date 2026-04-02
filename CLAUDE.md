@@ -76,7 +76,7 @@ Use a single PAT token for all operations including content import via the platf
 1. Get OAuth credentials via MCP: get_oauth_credentials({ spaceId: SPACE_ID })
 2. Create DC Import JSON for [content_type] using get_import_example()
 3. Import content type via MCP: import_content({ spaceId: SPACE_ID, content: {...} })
-4. **CRITICAL**: Run schema generation (`npm run generate-schema`) to update GraphQL schema
+4. **CRITICAL**: Run schema generation (`npm run sync-schema`) to update GraphQL schema
 5. Create TypeScript types and GraphQL queries
 6. Build frontend components ([ContentCard], [ContentRenderer])
 7. Create listing and detail pages
@@ -195,7 +195,7 @@ import_content({
 **CRITICAL: Immediately Update GraphQL Schema After Import:**
 ```bash
 # Generate updated GraphQL schema to include new content type
-npm run generate-schema
+npm run sync-schema
 ```
 
 **Verify the schema includes your content type:**
@@ -638,7 +638,7 @@ If your code changes aren't showing up:
 
 **Solution Process**:
 1. Clear Drupal caches (if you have admin access)
-2. **Always run schema generation script**: `npm run generate-schema`
+2. **Always run schema generation script**: `npm run sync-schema`
 3. This regenerates the GraphQL schema files and validates the schema is updated
 4. Test queries again after schema regeneration
 
@@ -648,10 +648,10 @@ If your code changes aren't showing up:
 
 ```bash
 # Generate updated GraphQL schema after content type imports
-npm run generate-schema
+npm run sync-schema
 ```
 
-This command runs `scripts/generate-schema.ts` which:
+This command uses `decoupled-cli` to:
 - Authenticates with Drupal using OAuth credentials from `.env.local`
 - Performs GraphQL introspection to get the current schema
 - Generates `schema/schema.graphql` (SDL format for reference)
@@ -675,7 +675,7 @@ The script requires valid OAuth credentials in `.env.local`:
 
 **Add this to your workflow**:
 1. Import content type via MCP: `import_content({ spaceId: SPACE_ID, content: {...} })`
-2. **Immediately run**: `npm run generate-schema`
+2. **Immediately run**: `npm run sync-schema`
 3. Check generated schema includes your new content type
 4. Test GraphQL queries
 5. Proceed with frontend implementation
@@ -706,7 +706,7 @@ import_content({ spaceId: SPACE_ID, content: {...}, preview: true })
 **Local Development Commands:**
 ```bash
 # Generate fresh schema (most important after any import)
-npm run generate-schema
+npm run sync-schema
 
 # Build and validate TypeScript
 npm run build
@@ -839,7 +839,7 @@ features?: string[]
 **Discovery Process**: Check GraphQL schema to understand actual field structure:
 ```bash
 # Generate fresh schema and check field structure
-npm run generate-schema
+npm run sync-schema
 grep -i nodeProducts schema/schema.graphql
 # Check the actual schema files for field names and types
 ```
@@ -954,20 +954,20 @@ The most important learning from the product catalog implementation is the **man
 
 ```bash
 # After any DC import, immediately run:
-npm run generate-schema
+npm run sync-schema
 
 # This step is MANDATORY for GraphQL integration to work
 ```
 
 **Why this is critical**:
 - DC API creates Drupal content types but doesn't trigger GraphQL schema rebuilds
-- The `generate-schema` script performs fresh introspection and updates local schema files
+- The `sync-schema` script performs fresh introspection and updates local schema files
 - Without this step, frontend development will fail with "type not found" errors
 - This step bridges the gap between Drupal content type creation and Next.js GraphQL integration
 
 **Workflow Integration**:
 1. Import via DC API ✅
-2. **Run `npm run generate-schema`** ✅ ← CRITICAL STEP
+2. **Run `npm run sync-schema`** ✅ ← CRITICAL STEP
 3. Verify schema includes new content type ✅
 4. Proceed with frontend development ✅
 
@@ -980,7 +980,7 @@ This learning transforms the development workflow from "sometimes works" to "rel
 **Discovery Method**:
 ```bash
 # Check generated schema to understand actual field structure
-npm run generate-schema
+npm run sync-schema
 grep -A 10 -B 5 nodeProducts schema/schema.graphql
 # This shows the actual field names and types available
 ```
@@ -1095,7 +1095,7 @@ curl -s -o /dev/null -w "%{http_code}" "https://images.unsplash.com/photo-XXXX?w
 3. Space ready → get OAuth credentials          ← SPACE READY
 4. Update .env.local with new credentials
 5. Import content
-6. Run generate-schema
+6. Run sync-schema
 7. Verify/adjust GraphQL field names in queries
 8. Final build and test
 ```
@@ -1110,7 +1110,7 @@ curl -s -o /dev/null -w "%{http_code}" "https://images.unsplash.com/photo-XXXX?w
 **What must wait until after provisioning**:
 - `.env.local` credential updates
 - Content import
-- `npm run generate-schema`
+- `npm run sync-schema`
 - GraphQL field name verification
 - Build and runtime testing
 
@@ -1119,7 +1119,7 @@ curl -s -o /dev/null -w "%{http_code}" "https://images.unsplash.com/photo-XXXX?w
 **Essential Commands Sequence**:
 ```bash
 # After DC import, always run:
-npm run generate-schema  # Updates GraphQL schema
+npm run sync-schema  # Updates GraphQL schema
 npm run build           # Validates TypeScript and builds
 npm run dev            # Test in development
 ```
