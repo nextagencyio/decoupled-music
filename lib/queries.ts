@@ -7,15 +7,21 @@ export const GET_HOMEPAGE_DATA = gql`
       nodes {
         id
         title
-      heroTitle
-      heroSubtitle
-      heroDescription { processed summary }
-      statsItems
-      featuredItemsTitle
-      ctaTitle
-      ctaDescription { processed summary }
-      ctaPrimary
-      ctaSecondary
+        heroTitle
+        heroSubtitle
+        heroDescription { processed }
+        statsItems {
+          ... on ParagraphStatItem {
+            id
+            number
+            label
+          }
+        }
+        featuredItemsTitle
+        ctaTitle
+        ctaDescription { processed }
+        ctaPrimary
+        ctaSecondary
       }
     }
   }
@@ -30,8 +36,8 @@ export const GET_RELEASES = gql`
         path
         created { timestamp }
         ... on NodeRelease {
-          releaseFormat
-          genre
+          releaseFormat { ... on TermReleaseFormat { name } }
+          genre { ... on TermGenre { name } }
           releaseDate { timestamp }
           trackCount
           duration
@@ -39,6 +45,7 @@ export const GET_RELEASES = gql`
           coverArt { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           tracklist
           streamingUrl
+          body { processed }
         }
       }
     }
@@ -54,15 +61,16 @@ export const GET_RELEASE_BY_PATH = gql`
             id
             title
             path
-          releaseFormat
-          genre
-          releaseDate { timestamp }
-          trackCount
-          duration
-          recordLabel
-          coverArt { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          tracklist
-          streamingUrl
+            releaseFormat { ... on TermReleaseFormat { name } }
+            genre { ... on TermGenre { name } }
+            releaseDate { timestamp }
+            trackCount
+            duration
+            recordLabel
+            coverArt { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            tracklist
+            streamingUrl
+            body { processed }
           }
         }
       }
@@ -88,6 +96,7 @@ export const GET_TOUR_DATES = gql`
           soldOut
           supportAct
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          body { processed }
         }
       }
     }
@@ -103,15 +112,16 @@ export const GET_TOUR_DATE_BY_PATH = gql`
             id
             title
             path
-          eventDate { timestamp }
-          venueName
-          city
-          country
-          ticketUrl
-          ticketPrice
-          soldOut
-          supportAct
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            eventDate { timestamp }
+            venueName
+            city
+            country
+            ticketUrl
+            ticketPrice
+            soldOut
+            supportAct
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed }
           }
         }
       }
@@ -132,6 +142,7 @@ export const GET_BIOS = gql`
           joinedYear
           influences
           photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          body { processed }
         }
       }
     }
@@ -147,10 +158,11 @@ export const GET_BIO_BY_PATH = gql`
             id
             title
             path
-          memberRole
-          joinedYear
-          influences
-          photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            memberRole
+            joinedYear
+            influences
+            photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed }
           }
         }
       }
@@ -167,10 +179,65 @@ export const GET_NODE_BY_PATH = gql`
           ... on NodeHomepage {
             id
             title
+            heroTitle
+            heroSubtitle
+            heroDescription { processed }
+            statsItems {
+              ... on ParagraphStatItem {
+                id
+                number
+                label
+              }
+            }
+            featuredItemsTitle
+            ctaTitle
+            ctaDescription { processed }
+            ctaPrimary
+            ctaSecondary
           }
           ... on NodePage {
             id
             title
+            body { processed }
+          }
+          ... on NodeRelease {
+            id
+            title
+            path
+            releaseFormat { ... on TermReleaseFormat { name } }
+            genre { ... on TermGenre { name } }
+            releaseDate { timestamp }
+            trackCount
+            duration
+            recordLabel
+            coverArt { url alt width height }
+            tracklist
+            streamingUrl
+            body { processed }
+          }
+          ... on NodeTourDate {
+            id
+            title
+            path
+            eventDate { timestamp }
+            venueName
+            city
+            country
+            ticketUrl
+            ticketPrice
+            soldOut
+            supportAct
+            image { url alt width height }
+            body { processed }
+          }
+          ... on NodeBio {
+            id
+            title
+            path
+            memberRole
+            joinedYear
+            influences
+            photo { url alt width height }
             body { processed }
           }
         }

@@ -88,7 +88,37 @@ export function getClient(): TypedClient {
           query ($path: String!) {
             route(path: $path) {
               ... on RouteInternal {
-                entity { ... on NodePage { __typename id title path body { processed } } }
+                entity {
+                  __typename
+                  ... on NodeHomepage {
+                    id title heroTitle heroSubtitle
+                    heroDescription { processed }
+                    statsItems { ... on ParagraphStatItem { id number label } }
+                    featuredItemsTitle ctaTitle
+                    ctaDescription { processed }
+                    ctaPrimary ctaSecondary
+                  }
+                  ... on NodePage { id title path body { processed } }
+                  ... on NodeRelease {
+                    id title path
+                    releaseFormat { ... on TermReleaseFormat { name } }
+                    genre { ... on TermGenre { name } }
+                    releaseDate { timestamp } trackCount duration recordLabel
+                    coverArt { url alt width height } tracklist streamingUrl
+                    body { processed }
+                  }
+                  ... on NodeTourDate {
+                    id title path eventDate { timestamp }
+                    venueName city country ticketUrl ticketPrice soldOut supportAct
+                    image { url alt width height }
+                    body { processed }
+                  }
+                  ... on NodeBio {
+                    id title path memberRole joinedYear influences
+                    photo { url alt width height }
+                    body { processed }
+                  }
+                }
               }
             }
           }

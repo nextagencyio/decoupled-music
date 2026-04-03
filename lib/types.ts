@@ -1,14 +1,24 @@
+export interface DrupalTerm {
+  name: string
+}
+
+export interface DrupalStatItem {
+  id: string
+  number: string
+  label: string
+}
+
 export interface DrupalHomepage {
   id: string
   title: string
   path?: string
   heroTitle?: string
   heroSubtitle?: string
-  heroDescription?: { processed: string; summary?: string }
-  statsItems?: string
+  heroDescription?: { processed: string }
+  statsItems?: DrupalStatItem[]
   featuredItemsTitle?: string
   ctaTitle?: string
-  ctaDescription?: { processed: string; summary?: string }
+  ctaDescription?: { processed: string }
   ctaPrimary?: string
   ctaSecondary?: string
 }
@@ -17,22 +27,23 @@ export interface DrupalPage {
   id: string
   title: string
   path?: string
-
+  body?: { processed: string }
 }
 
 export interface DrupalRelease {
   id: string
   title: string
   path?: string
-  releaseFormat?: string
-  genre?: string
+  releaseFormat?: DrupalTerm[]
+  genre?: DrupalTerm[]
   releaseDate?: { timestamp: string }
   trackCount?: number
   duration?: string
   recordLabel?: string
   coverArt?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
-  tracklist?: string
+  tracklist?: string[]
   streamingUrl?: string
+  body?: { processed: string }
 }
 
 export interface DrupalTourDate {
@@ -45,9 +56,10 @@ export interface DrupalTourDate {
   country?: string
   ticketUrl?: string
   ticketPrice?: string
-  soldOut?: string
+  soldOut?: boolean
   supportAct?: string
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  body?: { processed: string }
 }
 
 export interface DrupalBio {
@@ -56,8 +68,9 @@ export interface DrupalBio {
   path?: string
   memberRole?: string
   joinedYear?: string
-  influences?: string
+  influences?: string[]
   photo?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
+  body?: { processed: string }
 }
 
 export interface ReleasesData {

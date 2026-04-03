@@ -15,7 +15,8 @@
     "setup-content": "npx decoupled-cli@latest content import --file data/music-content.json",
     "setup-content:preview": "npx decoupled-cli@latest content import --file data/music-content.json --preview",
     "build:cloudflare": "opennextjs-cloudflare build",
-    "sync-schema": "npx decoupled-cli@latest schema sync"
+    "sync-schema": "npx decoupled-cli@latest schema sync",
+    "test:e2e": "npx playwright test"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@opennextjs/cloudflare": "^1.17.1",
+    "@playwright/test": "^1.59.1",
     "@types/node": "^22",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
